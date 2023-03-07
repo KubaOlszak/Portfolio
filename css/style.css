@@ -249,7 +249,7 @@ form {
 
 /** Footer **/
 footer ul li {
-	padding: 3px 0;
+	padding-right: 10px;
 }
 
 footer ul li img {
