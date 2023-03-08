@@ -2,123 +2,125 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Kuba Olszak</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="stylesheet" href="css/dark.css"> -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Kuba Olszak</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <!-- <div class="background"><img src="img/Fond_portfolio.jpg" alt="">
-    </div> -->
-  <header>
-    <nav>
-      <div class="logo"><strong>F/5.6</strong></div>
-      <div class="menus_container">
-        <!-- logos avec liens réseaux sociaux-->
-        <div class="social_header">
-          <ul>
-            <li><a href="#"><img src="../v2/img/icons/linkedin.png" alt="linkedin"></a></li>
-            <li><a href="#"><img src="../v2/img/icons/github.png" alt="github"></a></li>
-            <li><a href="#"><img src="../v2/img/icons/instagram.png" alt="instagram"></a></li>
-            <li><a href="#"><img src="../v2/img/icons/e-mail.png" alt="e-mail"></a></li>
-          </ul>
-        </div>
-
-        <!-- Navigation à transformer en burger -->
-        <div class="main_menu burger_menu">
-          <ul>
-            <li><a href="#projects"><span>.</span>à propos</a></li>
-            <li><a href="#"><span>.</span>projets</a></li>
-            <li><a href="#"><span>.</span>comptétences</a></li>
-            <li><a href="#"><span>.</span>contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <section class="section_intro">
-      <div class="titres_intro">
-        <h1>Kuba OLSZAK</h1>
-        <h2>Développeur<br>web junior</h2>
-      </div>
-      <div class="text_intro">
-        <!-- <div class="profil"> -->
-        <div class="photo_profil"><img src="img/avatar.jpeg" alt="photo"></div>
-        <div class="txt_btn">
-          <p>Bienvenue, dev fullstack HTML/CSS, PHP, JS. Option React et Angular. Ayant travaillé comme photographe et
-            ingénieur du son, très bon relationnel, attentif à vos besoins.
-            <br>
-            Discutons de votre futur projet.
-          </p>
-          <div class="contact_button"><button type="button" onclick="window.location.href='#contact'">Contact</button>
-          </div>
-        </div>
-        <!-- </div> -->
-      </div>
-    </section>
-  </header>
-
-  <main>
-    <section id="projects" class="section_projets ">
-      <h2>Projets<span>&nbsp&nbsp</span></h2>
-      <div class="projects_container">
-        <div><img src="img/projets/pexels-andy-vu-3244513.jpg" alt="Projet 1"></div>
-        <div><img src="img/projets/pexels-arthouse-studio-4534200.jpg" alt="Projet 2"></div>
-        <div><img src="img/projets/pexels-andy-vu-3244513.jpg" alt="Projet 3"></div>
-        <div><img src="img/projets/pexels-arthouse-studio-4534200.jpg" alt="Projet 4"></div>
-      </div>
-    </section>
-    <section class="section_skills">
-      <h2>Compétences<span>&nbsp&nbsp</span></h2>
-      <div class="progress_container">
-        <div class="progress_bars">
-          <progress id="html" max="100" value="60">40%</progress>
-          <progress id="css" max="100" value="40">40%</progress>
-          <progress id="php" max="100" value="5">40%</progress>
-          <progress id="mysql" max="100" value="2">40%</progress>
-          <progress id="symfony" max="100" value="1">40%</progress>
-        </div>
-        <div class="progress_items">
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>PHP</p>
-          <p>MYSQL</p>
-          <p>SYMFONY</p>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <h2>Contact<span>&nbsp&nbsp</span></h2>
-      <form action="form.php" method="post" enctype="multipart/form-data">
-        <fieldset>
-          <div class="contact_fields">
-            <div class="nomprenom">
-              <input id="nom" name="nom" type="text" size="15" placeholder="Votre nom" requiered>
-              <input id="prenom" name="prenom" type="text" size="15" placeholder="Votre prenom">
+    <header>
+        <nav>
+            <div class="logo"><strong>F/5.6</strong></div>
+            <div class="menus_container">
+                <!-- logos avec liens réseaux sociaux-->
+                <div class="social_header">
+                    <ul>
+                        <li><a href="https://fr.linkedin.com/in/kuba-olszak-77b325190" rel="external"
+                                target="_blank"><img src="img/icons/linkedin.png" alt="linkedin"></a></li>
+                        <li><a href="https://github.com/KubaOlszak" target="_blank"><img src="img/icons/github.png"
+                                    alt="github"></a></li>
+                        <li><a href="https://www.instagram.com/kubaolszak_/" rel="external" target="_blank"><img
+                                    src="img/icons/instagram.png" alt="instagram"></a></li>
+                        <li><a href="mailto:kuba.olszak@ntymail.com" rel="external" target="_blank"><img
+                                    src="img/icons/e-mail.png" alt="e-mail"></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Navigation à transformer en burger -->
+                <div class="main_menu burger_menu">
+                    <ul>
+                        <li><a href="#"><span>.</span>à propos</a></li>
+                        <li><a href="#projects"><span>.</span>projets</a></li>
+                        <li><a href="#skills"><span>.</span>comptétences</a></li>
+                        <li><a href="#contact"><span>.</span>contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <br>
-            <input id="email_adress" name="email_adress" type="email" size="36" placeholder="Adress e-mail" required>
-            <br>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message" requiered></textarea>
-            <br>
-            <input type="submit" />
-          </div>
-        </fieldset>
-      </form>
-    </section>
-  </main>
-  <footer>
-    <!-- logos avec liens réseaux sociaux plus gros que dans HEADER-->
-    <ul>
-      <li><a href="#"><img src="../v2/img/icons/linkedin.png" alt="linkedin"></a></li>
-      <li><a href="#"><img src="../v2/img/icons/github.png" alt="github"></a></li>
-      <li><a href="#"><img src="../v2/img/icons/instagram.png" alt="instagram"></a></li>
-      <li><a href="#"><img src="../v2/img/icons/e-mail.png" alt="e-mail"></a></li>
-    </ul>
-  </footer>
+        </nav>
+        <section class="section_intro">
+            <div class="titres_intro">
+                <div class="div_h1">
+                    <h1>Kuba OLSZAK</h1>
+                </div>
+                <div class="div_h2">
+                    <h2>Développeur<br>web junior</h2>
+                </div>
+            </div>
+            <div class="text_intro">
+                <div class="photo_profil"><img src="img/avatar.jpeg" alt="photo"></div>
+                <div class="txt_btn">
+                    <div class="div_p">
+                        <p>Bienvenue, dev fullstack HTML/CSS, PHP, JS. Option React et Angular. Ayant travaillé comme photographe et ingénieur du son, très bon relationnel, attentif à vos besoins.
+                        <br>
+                        Discutons de votre futur projet.
+                        </p>
+                    </div>
+                    <div class="contact_button"><button type="button"
+                            onclick="window.location.href='#contact'">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="projects" class="section_projets ">
+            <h2>Projets<span>&nbsp&nbsp</span></h2>
+            <div class="projects_container">
+                <div><a href="about:blank" target="_blank"><img src="img/projets/pexels-andy-vu-3244513.jpg" alt="Projet 1"></a></div>
+                <div><a href="about:blank" target="_blank"><img src="img/projets/pexels-arthouse-studio-4534200.jpg" alt="Projet 2"></a></div>
+                <div><a href="about:blank" target="_blank"><img src="img/projets/pexels-andy-vu-3244513.jpg" alt="Projet 3"></a></div>
+                <div><a href="about:blank" target="_blank"><img src="img/projets/pexels-arthouse-studio-4534200.jpg" alt="Projet 4"></a></div>
+            </div>
+        </section>
+        <section id="skills" class="section_skills">
+            <h2>Compétences<span>&nbsp&nbsp</span></h2>
+            <div class="progress_container">
+                <div class="progress_bars">
+                    <progress id="html" max="100" value="60">40%</progress>
+                    <progress id="css" max="100" value="40">40%</progress>
+                    <progress id="php" max="100" value="5">40%</progress>
+                    <progress id="mysql" max="100" value="2">40%</progress>
+                    <progress id="symfony" max="100" value="1">40%</progress>
+                </div>
+                <div class="progress_items">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>PHP</p>
+                    <p>MYSQL</p>
+                    <p>SYMFONY</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact<span>&nbsp&nbsp</span></h2>
+            <form action="form.php" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <div class="contact_fields">
+                        <div class="nomprenom">
+                            <input id="nom" name="nom" type="text" size="15" placeholder="Votre nom" requiered>
+                            <input id="prenom" name="prenom" type="text" size="15" placeholder="Votre prenom">
+                        </div>
+                        <input id="email_adress" name="email_adress" type="email" size="36" placeholder="Adress e-mail"
+                            required>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"
+                            requiered></textarea>
+                        <input type="submit" />
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <!-- logos avec liens réseaux sociaux plus gros que dans HEADER-->
+        <ul>
+            <li><a href="#"><img src="img/icons/linkedin.png" alt="linkedin"></a></li>
+            <li><a href="#"><img src="img/icons/github.png" alt="github"></a></li>
+            <li><a href="#"><img src="img/icons/instagram.png" alt="instagram"></a></li>
+            <li><a href="#"><img src="img/icons/e-mail.png" alt="e-mail"></a></li>
+        </ul>
+    </footer>
 </body>
-
 </html>

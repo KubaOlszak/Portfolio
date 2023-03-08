@@ -22,7 +22,6 @@ a {text-decoration: none;}
 a:link {color: #282828;}
 a:visited {color: #282828;}
 a:hover {color: #282828;}
-a:active {color: #008b8b;}
 
 header,
 main,
@@ -34,21 +33,23 @@ footer {
 
 header ul,
 footer ul,
-nav,
-.social_menu, .social_header {
+nav {
 	display: flex;
 }
 
 /**  HEADER  **/
 
-/* navigation  */
-nav {margin-top: 1.5em;}
+/* navigation : contient logo et le container des menus */
+nav {
+	width: 100%;
+	margin-top: 1.5em;
+	justify-content: space-between;
+	}
 .logo {
 	display: flex;
-	width: 150px;
+	align-items: end;
 }
 .logo strong {
-	margin: 0 auto;
 	font-weight: 700;
 	font-size: 2.6em;
 }
@@ -58,30 +59,24 @@ nav {margin-top: 1.5em;}
 	transition-property: text-shadow;
 }
 
+ /*  Container des 2 menus, de navigation et des réseaux sociaux  */
 .menus_container {
 	display: flex;
-	width: 100%;
-	margin-left: 50px;
-	/* padding: 0; */
+	width: 1000px;
 	flex-direction: row-reverse;
 	justify-content: space-between;
 	align-items: center;
 }
-
-.social_header,
-.main_menu {
-	display: flex;
-}
 .main_menu {
 	font-weight: 600;
 	font-size: 1.2em;
-	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 .main_menu ul li {
+	flex-shrink: 0;
 	padding-right: 20px;
 }
 .main_menu ul li a:hover span {
-color: #e74b4b;
+	color: #e74b4b;
 }
 
 .social_header ul li {
@@ -92,10 +87,11 @@ color: #e74b4b;
 	border-radius: 50%;
 }
 .social_header ul li:hover img {
-	background-color: #e74b4b;
+	background-color: #8de781;
 }
+
+/*  Section du HEADER avec les titres et le texte d'introduction  */
 .section_intro {
-	/* position: relative; */
 	width: 100%;
 	display: flex;
 	margin: 170px auto 0 auto;
@@ -103,58 +99,74 @@ color: #e74b4b;
 }
 .titres_intro {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: center;
+}
+.div_h1,
+.div_h2 {
+	width: 100%;
 }
 .titres_intro h1,
 .titres_intro h2 {
 	font-weight: 700;
+	text-align: center;
 }
 .titres_intro h1 {
-	margin-left: 140px;
 	font-size: 3.8em;
 }
 .titres_intro h2 {
-	/* margin-top: 50px; */
-	margin-right: 140px;
 	font-size: 3.7em;
 }
 
 .text_intro {
-	display: flex;
+	width: 100%;
 	margin-top: 150px;
-}
-.contact_button {
-	/* padding-left: 70%; */
-}
-
-.contact_button button {
-	/* border: 1px; */
-	border-radius: 10%;
-	background-color: #800080;
-	color: #1bdea3
-}
-.photo_profil {display: flex;}
-.text_intro {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
+}
+.photo_profil {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.photo_profil img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
 }
 .txt_btn {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+.div_p {
+	width: 550px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+}
 .txt_btn p {
-	width: 500px;
+	width: 450px;
 	font-weight: 400;
 	font-size: 1.7em;
 	line-height: 1.4;
 	text-align: justify;
 }
-.photo_profil img {
-	width: 250px;
-	/* height: 250px; */
-	border-radius: 50%;
+.contact_button button {
+	padding: 8px 13px;
+	border: 2px solid #252323;
+	box-shadow: 3px 4px #252323;
+	background-color: #e8e9ed;
+	text-align: center;
+	font-size: 1.3em;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.contact_button button:hover {
+	background-color: #337ae4ea;
+	color:#e8e9ed;
+}
+
 
 /** MAIN **/
 
@@ -191,15 +203,12 @@ main h2 {
 	flex-wrap: wrap;
 	justify-content: center;
 }
-
 .projects_container div img {
 	width: 300px;
 	height: 300px;
 }
 
-
 /** COMPTENCES **/
-.section_skills {}
 
 .progress_container {
 	display: flex;
@@ -222,7 +231,8 @@ main h2 {
 
 .progress_bars progress,
 .progress_items p {
-	padding-bottom: 15px;
+	width: 100%;
+	margin-bottom: 15px;
 }
 
 /** CONTACT **/
@@ -248,6 +258,7 @@ form {
 }
 
 /** Footer **/
+footer ul{margin-bottom: 7px;}
 footer ul li {
 	padding-right: 10px;
 }
@@ -255,4 +266,8 @@ footer ul li {
 footer ul li img {
 	width: 20px;
 	height: 20px;
+	border-radius: 50%;
+}
+footer ul li:hover img {
+	background-color: #8de781;
 }
