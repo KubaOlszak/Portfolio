@@ -71,13 +71,15 @@ nav {
 	display: none;
 	position: absolute;
 	margin-left: 10px;
-	top: 15px;
-	right: 15px;
+	top: 21px;
+	right: 20px;
+	z-index: 20;
 }
 .menu_responsive img {
 	width: 28px;
 	height: 28px;
 }
+
 .main_menu {
 	font-weight: 600;
 	font-size: 1.2em;
@@ -89,6 +91,19 @@ nav {
 .main_menu ul li a::before {content: ".";}
 .main_menu ul li a:hover a::before {
 	color: #e74b4b;
+}
+.menu_mobile {
+	display: none;
+	flex-direction: column;
+	padding-top: 13px;
+	margin-top: 30px;
+	border: 2px solid #252323;
+	text-align: center;
+	font-size: 1.3rem;
+}
+
+.menu_mobile a {
+	margin-bottom: 13px;
 }
 
 .social_header ul li {
@@ -260,15 +275,16 @@ form {
 	flex-direction: column;
 	margin: 0 auto;
 }
-
 .nomprenom {
 	display: flex;
 	justify-content: space-between;
 }
-
 .nomprenom input {
 	width: 50%;
 }
+#email_adress,
+.nomprenom
+ {height: 28px;}
 
 /** Footer **/
 footer ul{margin-bottom: 7px;}
@@ -319,7 +335,10 @@ footer ul li:hover img {
 	footer {
 		margin: 0 30px;
 	}
-	main { margin-top: 120px;}
+	main {
+		margin-top: 120px;
+		margin-bottom: 40px;
+}
 	.titres_intro h1,
 	.titres_intro h2 {
 		font-size: 3rem;
@@ -327,6 +346,11 @@ footer ul li:hover img {
 	.div_h1 h1 {text-align: left;}
 	.div_h2 {
 		margin-left: 50px;
+	}
+	.btn_submit {
+		width: 40%;
+		margin-top: 8px;
+		align-self: center;
 	}
 }
 
@@ -336,6 +360,8 @@ footer ul li:hover img {
 	}
 	.menu_responsive {
 		display: block;
+		z-index: 20;
+		background-color: #e74b4b;
 	}
 	.main_menu {
 	display: none;
@@ -351,7 +377,6 @@ footer ul li:hover img {
 	.social_header {
 		margin-bottom: 0px;
 	}
-
 }
 
 @media screen and (max-width: 750px) {
